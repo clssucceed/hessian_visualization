@@ -1,1 +1,3 @@
 # hessian_visualization
+
+通过人工设计一些合理的运动，特征分布来看下Hessian矩阵，通常会以热力图的方式查看Hessian矩阵
