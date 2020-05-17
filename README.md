@@ -11,3 +11,7 @@ TODO:
 6. vio sliding window
 7. 有先验/无先验
 
+目标:
+1. 从Hessian矩阵的角度理解drift和可观的区别
+2. 直观理解历史观测如何通过marginalization factor对于滑窗中的状态产生影响的
+
