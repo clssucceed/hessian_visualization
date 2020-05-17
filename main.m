@@ -43,8 +43,8 @@ for index_frame = 1 : frame_number - 1
             Pw = Rwk * Pk + twk;
             Pc = Rwc' * (Pw - twc);
             dpc2_dPc = focal_length * ...
-                [1 / Pc(3), 0, -Pc(1) / Pc(3) * Pc(3); ...
-                 0, 1 / Pc(3), -Pc(2) / Pc(3) * Pc(3)];
+                [1 / Pc(3), 0, -Pc(1) / (Pc(3) * Pc(3)); ...
+                 0, 1 / Pc(3), -Pc(2) / (Pc(3) * Pc(3))];
             dpc2_dPw = dpc2_dPc * Rwc';
             dr_dRwk = dpc2_dPw * (-Rwk * skew_matrix(Pk));
             dr_dtwk = dpc2_dPw;
